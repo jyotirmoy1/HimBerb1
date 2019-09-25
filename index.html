@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>	
-	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/news-carousel.css">
     <!--[if lt IE 9]>
         <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -94,7 +94,7 @@
                     <h2>Purest <span class="txt-yellow">Berberine</span> supplement from wildcrafted roots, since 1968.</h2>
                     <p>A natural solution to better blood sugar management and better being.</p>                    
 					<button type="button" class="button white" data-toggle="modal" data-target="#myModal">Ask for a sample!</button>
-					<button type="button" class="button white" data-toggle="modal" data-target="#myModal2">Download COA</button>
+					<button type="button" class="button white" data-toggle="modal" data-target="#myModal2">Ask for COA</button>
 
                 </div>
                 <div class="col-md-5 text-right">
@@ -114,23 +114,24 @@
          <!-- <button type="button" class="close" data-dismiss="modal">&times;</button>-->
           <h4 class="modal-title">Ask for a sample!</h4>
         </div>
-		<form action="ASprocess.php" id="as-form" method="post" class="">
+		<form action="https://formspree.io/samarthsingh@hpic.in" target="_blank" id="as-form" method="post" class="">
         <div class="modal-body">
           <div class="form-double">
-		  <input type="text" id="as-name" name="as-name" placeholder="Name*" class="form-control" required="required">
-		  <input type="text" id="as-organisation" name="as-organisation" placeholder="Organisation Name*" class="form-control" required="required">
+            <input type="hidden" name="Purpose" value="Ask for a sample" />
+		  <input type="text" id="as-name" name="Name" placeholder="Name*" class="form-control" required="required">
+		  <input type="text" id="as-organisation" name="Organisation" placeholder="Organisation Name*" class="form-control" required="required">
 		 </div>
 		 <div class="form-double">
-		 <input type="text" id="as-designation" name="as-designation" placeholder="Designation*" class="form-control" required="required">
-		  <input type="email" id="as-email" name="as-email" placeholder="Official Email Address*" class="form-control" required="required">
+		 <input type="text" id="as-designation" name="Destination" placeholder="Designation*" class="form-control" required="required">
+		  <input type="email" id="as-email" name="Email" placeholder="Official Email Address*" class="form-control" required="required">
 		  </div>
 		 <div class="form-double">
-		  <input type="text" id="as-phone" name="as-phone" placeholder="Phone Number" class="form-control" >
-		  <input type="text" id="as-mobile" name="as-mobile" placeholder="Mobile Number*" class="form-control" required="required">
+		  <input type="text" id="as-phone" name="Phone" placeholder="Phone Number" class="form-control" >
+		  <input type="text" id="as-mobile" name="Mobile" placeholder="Mobile Number*" class="form-control" required="required">
 		  </div>
 		 <div class="form-double">
-		  <input type="text" id="as-website" name="as-website" placeholder="Organisation Website" class="form-control" >
-		  <input type="text" id="as-address" name="as-address" placeholder="Address" class="form-control" >
+		  <input type="text" id="as-website" name="Website" placeholder="Organisation Website" class="form-control" >
+		  <input type="text" id="as-address" name="Address" placeholder="Address" class="form-control" >
         </div>
         </div>
         <div class="modal-footer" style="clear: both;">
@@ -152,23 +153,24 @@
           <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
           <h4 class="modal-title">Download COA</h4>
         </div>
-		<form action="coaprocess.php" id="coa-form" method="post" class="">
+		<form action="https://formspree.io/samarthsingh@hpic.in" target="_blank" id="coa-form" method="post" class="">
         <div class="modal-body">
           <div class="form-double">
-		  <input type="text" id="coa-name" name="coa-name" placeholder="Name*" class="form-control" required="required">
-		  <input type="text" id="coa-organisation" name="coa-organisation" placeholder="Organisation Name*" class="form-control" required="required">
+            <input type="hidden" name="Purpose" value="Ask for COA" />
+		  <input type="text" id="coa-name" name="Name" placeholder="Name*" class="form-control" required="required">
+		  <input type="text" id="coa-organisation" name="Organisation" placeholder="Organisation Name*" class="form-control" required="required">
 		 </div>
 		 <div class="form-double">
-		 <input type="text" id="coa-designation" name="coa-designation" placeholder="Designation*" class="form-control" required="required">
-		  <input type="email" id="coa-email" name="coa-email" placeholder="Official Email Address*" class="form-control" required="required">
+		 <input type="text" id="coa-designation" name="Destination" placeholder="Designation*" class="form-control" required="required">
+		  <input type="email" id="coa-email" name="Email" placeholder="Official Email Address*" class="form-control" required="required">
 		  </div>
 		 <div class="form-double">
-		  <input type="text" id="coa-phone" name="coa-phone" placeholder="Phone Number" class="form-control" >
-		  <input type="text" id="coa-mobile" name="coa-mobile" placeholder="Mobile Number*" class="form-control" required="required">
+		  <input type="text" id="coa-phone" name="Phone" placeholder="Phone Number" class="form-control" >
+		  <input type="text" id="coa-mobile" name="Mobile" placeholder="Mobile Number*" class="form-control" required="required">
 		  </div>
 		 <div class="form-double">
-		  <input type="text" id="coa-website" name="coa-website" placeholder="Organisation Website" class="form-control" >
-		  <input type="text" id="coa-address" name="coa-address" placeholder="Address" class="form-control" >
+		  <input type="text" id="coa-website" name="Website" placeholder="Organisation Website" class="form-control" >
+		  <input type="text" id="coa-address" name="Address" placeholder="Address" class="form-control" >
         </div>
         </div>
          <div class="modal-footer" style="clear: both;">
@@ -844,13 +846,14 @@ India</p>
                         </address>
                     </div>
                     <div class="col-xs-12 col-md-8">
-                        <form action="process.php" id="contact-form" method="post" class="contact-form">
+                        <form action="https://formspree.io/samarthsingh@hpic.in"  id="contact-form" method="post" target="_blank" class="contact-form">
                             <div class="form-double">
-                                <input type="text" id="form-name" name="form-name" placeholder="Your name" class="form-control" required="required">
-                                <input type="email" id="form-email" name="form-email" class="form-control" placeholder="E-mail address" required="required">
+                                    <input type="hidden" name="Purpose" value="Contact Us" />
+                                <input type="text" id="form-name" name="Name" placeholder="Your name" class="form-control" required="required">
+                                <input type="email" id="form-email" name="Email" class="form-control" placeholder="E-mail address" required="required">
                             </div>
-                            <input type="text" id="form-subject" name="form-subject" class="form-control" placeholder="Message topic">
-                            <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea>
+                            <input type="text" id="form-subject" name="Subject" class="form-control" placeholder="Message topic">
+                            <textarea name="message" id="form-message" name="Message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea>
                             <button type="sibmit" class="button">Submit</button>
                         </form>
                     </div>
@@ -896,7 +899,7 @@ India</p>
     <script src="js/vendor/bootstrap.min.js"></script>
     <!--Plugin-JS-->
     <script src="js/owl.carousel.min.js"></script>	
-    <script src="js/contact-form.js"></script>
+    <!-- <script src="js/contact-form.js"></script> -->
     <script src="js/jquery.parallax-1.1.3.js"></script>
     <script src="js/scrollUp.min.js"></script>
     <script src="js/magnific-popup.min.js"></script>

@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>	
-	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/news-carousel.css">
     <!--[if lt IE 9]>
         <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -94,7 +94,7 @@
                     <h2>Purest <span class="txt-yellow">Berberine</span> supplement from wildcrafted roots, since 1968.</h2>
                     <p>A natural solution to better blood sugar management and better being.</p>                    
 					<button type="button" class="button white" data-toggle="modal" data-target="#myModal">Ask for a sample!</button>
-					<button type="button" class="button white" data-toggle="modal" data-target="#myModal2">Download COA</button>
+					<button type="button" class="button white" data-toggle="modal" data-target="#myModal2">Ask for COA</button>
 
                 </div>
                 <div class="col-md-5 text-right">
@@ -114,23 +114,24 @@
          <!-- <button type="button" class="close" data-dismiss="modal">&times;</button>-->
           <h4 class="modal-title">Ask for a sample!</h4>
         </div>
-		<form action="ASprocess.php" id="as-form" method="post" class="">
+		<form action="https://formspree.io/samarthsingh@hpic.in" target="_blank" id="as-form" method="post" class="">
         <div class="modal-body">
           <div class="form-double">
-		  <input type="text" id="as-name" name="as-name" placeholder="Name*" class="form-control" required="required">
-		  <input type="text" id="as-organisation" name="as-organisation" placeholder="Organisation Name*" class="form-control" required="required">
+            <input type="hidden" name="Purpose" value="Ask for a sample" />
+		  <input type="text" id="as-name" name="Name" placeholder="Name*" class="form-control" required="required">
+		  <input type="text" id="as-organisation" name="Organisation" placeholder="Organisation Name*" class="form-control" required="required">
 		 </div>
 		 <div class="form-double">
-		 <input type="text" id="as-designation" name="as-designation" placeholder="Designation*" class="form-control" required="required">
-		  <input type="email" id="as-email" name="as-email" placeholder="Official Email Address*" class="form-control" required="required">
+		 <input type="text" id="as-designation" name="Destination" placeholder="Designation*" class="form-control" required="required">
+		  <input type="email" id="as-email" name="Email" placeholder="Official Email Address*" class="form-control" required="required">
 		  </div>
 		 <div class="form-double">
-		  <input type="text" id="as-phone" name="as-phone" placeholder="Phone Number" class="form-control" >
-		  <input type="text" id="as-mobile" name="as-mobile" placeholder="Mobile Number*" class="form-control" required="required">
+		  <input type="text" id="as-phone" name="Phone" placeholder="Phone Number" class="form-control" >
+		  <input type="text" id="as-mobile" name="Mobile" placeholder="Mobile Number*" class="form-control" required="required">
 		  </div>
 		 <div class="form-double">
-		  <input type="text" id="as-website" name="as-website" placeholder="Organisation Website" class="form-control" >
-		  <input type="text" id="as-address" name="as-address" placeholder="Address" class="form-control" >
+		  <input type="text" id="as-website" name="Website" placeholder="Organisation Website" class="form-control" >
+		  <input type="text" id="as-address" name="Address" placeholder="Address" class="form-control" >
         </div>
         </div>
         <div class="modal-footer" style="clear: both;">
@@ -152,23 +153,24 @@
           <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
           <h4 class="modal-title">Download COA</h4>
         </div>
-		<form action="coaprocess.php" id="coa-form" method="post" class="">
+		<form action="https://formspree.io/samarthsingh@hpic.in" target="_blank" id="coa-form" method="post" class="">
         <div class="modal-body">
           <div class="form-double">
-		  <input type="text" id="coa-name" name="coa-name" placeholder="Name*" class="form-control" required="required">
-		  <input type="text" id="coa-organisation" name="coa-organisation" placeholder="Organisation Name*" class="form-control" required="required">
+            <input type="hidden" name="Purpose" value="Ask for COA" />
+		  <input type="text" id="coa-name" name="Name" placeholder="Name*" class="form-control" required="required">
+		  <input type="text" id="coa-organisation" name="Organisation" placeholder="Organisation Name*" class="form-control" required="required">
 		 </div>
 		 <div class="form-double">
-		 <input type="text" id="coa-designation" name="coa-designation" placeholder="Designation*" class="form-control" required="required">
-		  <input type="email" id="coa-email" name="coa-email" placeholder="Official Email Address*" class="form-control" required="required">
+		 <input type="text" id="coa-designation" name="Destination" placeholder="Designation*" class="form-control" required="required">
+		  <input type="email" id="coa-email" name="Email" placeholder="Official Email Address*" class="form-control" required="required">
 		  </div>
 		 <div class="form-double">
-		  <input type="text" id="coa-phone" name="coa-phone" placeholder="Phone Number" class="form-control" >
-		  <input type="text" id="coa-mobile" name="coa-mobile" placeholder="Mobile Number*" class="form-control" required="required">
+		  <input type="text" id="coa-phone" name="Phone" placeholder="Phone Number" class="form-control" >
+		  <input type="text" id="coa-mobile" name="Mobile" placeholder="Mobile Number*" class="form-control" required="required">
 		  </div>
 		 <div class="form-double">
-		  <input type="text" id="coa-website" name="coa-website" placeholder="Organisation Website" class="form-control" >
-		  <input type="text" id="coa-address" name="coa-address" placeholder="Address" class="form-control" >
+		  <input type="text" id="coa-website" name="Website" placeholder="Organisation Website" class="form-control" >
+		  <input type="text" id="coa-address" name="Address" placeholder="Address" class="form-control" >
         </div>
         </div>
          <div class="modal-footer" style="clear: both;">
@@ -234,7 +236,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-4" style="padding-bottom: 30px;">
                     <div class="box" id="rmh1" style="border:1px solid #ccc;box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);">
                         <h3 class="txt-green">Wildcrafting</h3>
-						<div class="box-icon" style="height:380px;padding-top: 20px;">
+						<div class="box-icon" style="padding-top: 20px;">
                             <img src="images/sp1.png" alt="">
                         </div>                        
                         <p>Our Berberine Hydrochloride is   
@@ -254,7 +256,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-4" style="padding-bottom: 30px;">
                     <div class="box" id="rmh2" style="border:1px solid #ccc;box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);">
                         <h3 class="txt-green">Aqueous Extraction </h3>
-						<div class="box-icon" style="height:380px;padding-top: 20px;">
+						<div class="box-icon" style="padding-top: 20px;">
                             <img src="images/sp2.png" alt="">
                         </div>
                         
@@ -275,8 +277,8 @@
                 <div class="col-xs-12 col-sm-6 col-md-4" style="padding-bottom: 30px;">
                     <div class="box" id="rmh3" style="border:1px solid #ccc;box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);">
                         <h3 class="txt-green">Bio-Available</h3>
-						<div class="box-icon" style="height:380px;padding-top: 20px;">
-                            <img src="images/sp3.png" alt="">
+						<div class="box-icon" style="padding-top: 20px;">
+                            <img src="images/sp3.png" alt="" >
                         </div>
                         
                         <p>As a result of choosing the 
@@ -311,16 +313,13 @@
                         <div class="carousel-inner" role="listbox">
                             <div class="item active row">
                                 <div class="v-center">
-                                    <div class="col-xs-12 col-md-6">
+                                    <div class="col-xs-12 col-md-6 aaa" >
                                         <div class="caption-title" data-animation="animated fadeInUp">
                                             <h2>Low Carbon Footprints</h2>
                                         </div>
                                         <div class="caption-desc" data-animation="animated fadeInUp">
                                             <p>From minimum carbon emission to minimum carbon footprints through relentless cycles of innovation in every micro step that we take.</p>
-                                            </div>
-                                        <div class="caption-button" data-animation="animated fadeInUp">
-                                            <!--<a href="#" class="button">Read more</a>-->
-                                        </div>
+                                         </div>                                        
                                     </div>
                                     <div class="col-xs-12 col-md-6">
                                         <div class="caption-photo one" data-animation="animated fadeInRight">
@@ -332,16 +331,14 @@
                             </div>
                             <div class="item row">
                                 <div class="v-center">
-                                    <div class="col-xs-12 col-md-6">
+                                    <div class="col-xs-12 col-md-6 aaa">
                                         <div class="caption-title" data-animation="animated fadeInUp">
                                             <h2>Solar Powered</h2>
                                         </div>
                                         <div class="caption-desc" data-animation="animated fadeInUp">
                                             <p>A staunch belief in renewable energy lead us to make strategic business decisions and partnerships. Our facilities run on solar power for the most part of it.</p>
                                        </div>
-                                        <div class="caption-button" data-animation="animated fadeInUp">
-                                            <!--<a href="#" class="button">Read more</a>-->
-                                        </div>
+                                        
                                     </div>
                                     <div class="col-xs-12 col-md-6">
                                         <div class="caption-photo one" data-animation="animated fadeInRight">
@@ -353,16 +350,13 @@
                             </div>
                             <div class="item row">
                                 <div class="v-center">
-                                    <div class="col-xs-12 col-md-6">
+                                    <div class="col-xs-12 col-md-6 aaa">
                                         <div class="caption-title" data-animation="animated fadeInUp">
                                             <h2>All Natural Processes</h2>
                                         </div>
                                         <div class="caption-desc" data-animation="animated fadeInUp">
                                             <p>On our path to achieve purity of 97% or more through natural processes, we have engaged successfully in creating an ecosystem that nourishes wild crafting and aqueous extraction.</p>
-                                         </div>
-                                        <div class="caption-button" data-animation="animated fadeInUp">
-                                           <!-- <a href="#" class="button">Read more</a>-->
-                                        </div>
+                                         </div>                                       
                                     </div>
                                     <div class="col-xs-12 col-md-6">
                                         <div class="caption-photo one" data-animation="animated fadeInRight">
@@ -429,7 +423,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-4" style="padding-bottom: 30px;">
                     <div class="box" style="border:1px solid #ccc;box-shadow: 0 10px 30px 0 rgba(46, 94, 89, 0.1);">
                         <div class="box-icon" style="height:200px;padding-bottom: 10px;">
-                            <img src="images/sp4.png" alt="">
+                            <img src="images/sp4.png" alt="" style="height: 225px;">
                         </div>
                         <h3 class="txt-green"></h3>
                         <p>Our production is carried out in our facilities that are GMP certified.</p>
@@ -438,7 +432,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-4" style="padding-bottom: 30px;">
                     <div class="box" style="border:1px solid #ccc;box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);">
                         <div class="box-icon" style="height:200px;padding-bottom: 10px;">
-                            <img src="images/sp5.png" alt="">
+                            <img src="images/sp5.png" alt="" style="height: 155px;">
                         </div>
                         <!-- <h3 class="txt-green">PMDA</h3> -->
                         <p>We are accredited by Japanese PMDA as foreign manufacturing partners.</p>
@@ -451,7 +445,7 @@
 				<div class="col-xs-12 col-sm-6 col-md-4" style="padding-bottom: 30px;">
                     <div class="box" style="border:1px solid #ccc;box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);">
                         <div class="box-icon" style="height:200px;padding-bottom: 10px;">
-                            <img src="images/sp6.png" alt="">
+                            <img src="images/sp6.png" alt="" style="height: 225px;">
                         </div>
                         <!--<h3 class="txt-green">HACCP</h3> -->
                         <p>We are a HACCP compliant manufacturing facility.</p>
@@ -460,7 +454,7 @@
 				<div class="col-xs-12 col-sm-6 col-md-4" style="padding-bottom: 30px;">
                     <div class="box" style="border:1px solid #ccc;box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);">
                         <div class="box-icon" style="height:200px;padding-top: 35px;">
-                            <img src="images/sp7.png" alt="">
+                            <img src="images/sp7.png" alt="" style="height: 125px;">
                         </div>
                         <!--<h3 class="txt-green">FDA</h3>-->
                         <p>We have recently concluded our work and are now FSMA compliant.</p>
@@ -844,13 +838,14 @@ India</p>
                         </address>
                     </div>
                     <div class="col-xs-12 col-md-8">
-                        <form action="process.php" id="contact-form" method="post" class="contact-form">
+                        <form action="https://formspree.io/samarthsingh@hpic.in"  id="contact-form" method="post" target="_blank" class="contact-form">
                             <div class="form-double">
-                                <input type="text" id="form-name" name="form-name" placeholder="Your name" class="form-control" required="required">
-                                <input type="email" id="form-email" name="form-email" class="form-control" placeholder="E-mail address" required="required">
+                                    <input type="hidden" name="Purpose" value="Contact Us" />
+                                <input type="text" id="form-name" name="Name" placeholder="Your name" class="form-control" required="required">
+                                <input type="email" id="form-email" name="Email" class="form-control" placeholder="E-mail address" required="required">
                             </div>
-                            <input type="text" id="form-subject" name="form-subject" class="form-control" placeholder="Message topic">
-                            <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea>
+                            <input type="text" id="form-subject" name="Subject" class="form-control" placeholder="Message topic">
+                            <textarea name="message" id="form-message" name="Message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea>
                             <button type="sibmit" class="button">Submit</button>
                         </form>
                     </div>
@@ -896,7 +891,7 @@ India</p>
     <script src="js/vendor/bootstrap.min.js"></script>
     <!--Plugin-JS-->
     <script src="js/owl.carousel.min.js"></script>	
-    <script src="js/contact-form.js"></script>
+    <!-- <script src="js/contact-form.js"></script> -->
     <script src="js/jquery.parallax-1.1.3.js"></script>
     <script src="js/scrollUp.min.js"></script>
     <script src="js/magnific-popup.min.js"></script>
